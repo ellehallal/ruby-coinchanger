@@ -1,17 +1,31 @@
 def coinchanger(money)
   coins = {
-    0 => "0",
-    1 => "1",
-    2 => "2",
-    5 => "5",
-    10 => "10",
-    20 => "20",
-    50 => "50",
-    100 => "100",
-    200 => "200"
+    0 => 0,
+    1 => 1,
+    2 => 2,
+    5 => 5,
+    10 => 10,
+    20 => 20,
+    50 => 50,
+    100 => 100,
+    200 => 200
   }
 
   coins[money]
+
+  # coins = [200, 100, 50, 20, 10, 5, 2, 1]
+  #
+  # change = []
+  #
+  # coins.each do |coin|
+  #   while money > coin
+  #     if money / coin > 0
+  #       #does it fit, remove it from total
+  #     end
+  #   end
+  # end
+
+
 end
 
 
