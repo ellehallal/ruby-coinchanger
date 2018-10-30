@@ -33,6 +33,8 @@ describe 'coinchanger' do
     expect(coinchanger(100)).to eq '100'
   end
 
-
+  it "returns '200' when given 200" do
+    expect(coinchanger(200)).to eq '200'
+  end
 
 end

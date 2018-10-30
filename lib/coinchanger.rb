@@ -7,27 +7,11 @@ def coinchanger(money)
     10 => "10",
     20 => "20",
     50 => "50",
-    100 => "100"
+    100 => "100",
+    200 => "200"
   }
 
   coins[money]
-  # if money == 1
-  #   "1"
-  # elsif money == 2
-  #   "2"
-  # elsif money == 5
-  #   "5"
-  # elsif money == 10
-  #   "10"
-  # elsif money == 20
-  #   "20"
-  # elsif money == 50
-  #   "50"
-  # elsif money == 100
-  #   "100"
-  # else
-  #   "0"
-  # end
 end
 
 
