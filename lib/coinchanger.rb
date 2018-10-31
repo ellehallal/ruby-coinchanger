@@ -9,6 +9,12 @@ def coinchanger(money)
     elsif is_divisible(money, coin)
       change = [coin] * number_of_coins(money, coin)
       return change
+    elsif !is_divisible(money, coin)
+      #if not divisible equally then
+      # money / coin as a float  = result
+      #take result as an integer and multiply that by coins
+      #subtract result from money
+      #with remainder go through remaining coins and repeat
     end
   end
   change
