@@ -25,13 +25,11 @@ describe 'coinchanger' do
     end
   end
 
-  it "returns [2, 2] when given 4" do
-    expect(coinchanger(4)).to eq [2, 2]
+  it 'returns 5 x 200 coins if money equals 100' do
+    expect(coinchanger(1000)).to eq [200, 200, 200, 200, 200]
   end
 
-  it "returns [20, 20] when given 40" do
-    expect(coinchanger(40)).to eq [20, 20]
-  end
+
 
 
 end

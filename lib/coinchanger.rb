@@ -19,3 +19,11 @@ def coinchanger(money)
   end
   change
 end
+
+def is_divisible(money, coin)
+  money % coin == 0
+end
+
+def number_of_coins(money, coin)
+  money / coin
+end
