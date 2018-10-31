@@ -19,12 +19,6 @@ describe 'coinchanger' do
   end
 
 
-  # (201..251).each do |coin|
-  #   it "returns 0 when given a number which is not in the coin array" do
-  #     expect(coinchanger(coin)).to eq 0
-  #   end
-  # end
-
   it 'returns 5 x 200 coins if money equals 1000' do
     expect(coinchanger(1000)).to eq [200, 200, 200, 200, 200]
   end
