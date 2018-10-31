@@ -7,7 +7,7 @@ def coinchanger(money)
     if money == coin
        return coin
     elsif is_divisible(money, coin) && money != 300
-      return change = [coin] * number_of_coins(money, coin)
+      return [coin] * number_of_coins(money, coin)
     elsif money == 300
       return [200, 100]
       #if not divisible equally then
