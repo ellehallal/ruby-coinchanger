@@ -29,7 +29,7 @@ describe 'coinchanger' do
   # end
 
   it "returns [200, 100] if money equals 300" do
-    expect(coinchanger(300)). to eq [200, 100]
+    expect(coinchanger(300)).to eq [200, 100]
   end
 
 
