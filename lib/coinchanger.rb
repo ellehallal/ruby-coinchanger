@@ -6,6 +6,8 @@ def coinchanger(money)
   coins.each do |coin|
     if money == coin
        change = coin
+     elsif money == 4
+       change = coins[6], coins[6]
     end
   end
   change
