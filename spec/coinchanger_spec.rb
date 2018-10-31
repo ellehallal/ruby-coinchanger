@@ -7,8 +7,14 @@ describe 'coinchanger' do
     end
   end
 
-  it "returns 'not a coin' when given 3" do
-    expect(coinchanger(3)).to eq "not a coin"
+  it "returns 0 when given 3" do
+    expect(coinchanger(3)).to eq 0
+  end
+
+  (201..400).each do |coin|
+    it "returns 0 when given a number which is not in the coin array" do
+      expect(coinchanger(coin)).to eq 0
+    end
   end
 
   # it "returns [2, 2] when given 4" do
