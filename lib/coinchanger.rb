@@ -7,8 +7,7 @@ def coinchanger(money)
     if money == coin
        return coin
     elsif is_divisible(money, coin)
-      change = [coin] * number_of_coins(money, coin)
-      return change
+      return change = [coin] * number_of_coins(money, coin)
     elsif !is_divisible(money, coin)
       #if not divisible equally then
       # money / coin as a float  = result
