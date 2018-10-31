@@ -8,7 +8,7 @@ def coinchanger(money)
        return coin
     elsif is_divisible(money, coin)
       return change = [coin] * number_of_coins(money, coin)
-    elsif !is_divisible(money, coin)
+    elsif is_not_divisible(money, coin)
       #if not divisible equally then
       # money / coin as a float  = result
       #take result as an integer and multiply that by coins
@@ -25,4 +25,8 @@ end
 
 def number_of_coins(money, coin)
   money / coin
+end
+
+def is_not_divisible(money, coin)
+  money % coin != 0
 end
