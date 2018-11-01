@@ -49,6 +49,10 @@ describe 'coinchanger' do
     expect(coinchanger(157)).to eq [100, 50, 5, 2]
   end
 
+  it "returns [100, 50, 20, 10, 5, 2, 2] if money equals 189" do
+    expect(coinchanger(189)).to eq [100, 50, 20, 10, 5, 2, 2]
+  end
+
 
 
 
