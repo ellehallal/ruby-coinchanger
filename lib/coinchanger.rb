@@ -4,20 +4,19 @@ def coinchanger(money)
   change = []
 
   coins.each do |coin|
-    if money == coin
-       return change << coin
+    if is_divisible(money, coin)
+      number_of_coins(money, coin).times do
+        change << coin
+        money -= coin
+      end
     elsif !is_divisible(money, coin)
       while money >= coin
           change << coin
           money -= coin
       end
-    elsif is_divisible(money, coin)
-      number_of_coins(money, coin).times do
-        change << coin
-        money -= coin
-      end
     end
   end
+
   change
 end
 

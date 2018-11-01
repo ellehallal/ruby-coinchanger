@@ -5,10 +5,6 @@ describe 'coinchanger' do
     it "returns coin when given coin" do
       expect(coinchanger(coin)).to eq [coin]
     end
-    #
-    # it "returns 3 equal coins when given money, if divisible by 3" do
-    #   expect(coinchanger(coin * 3)).to eq [coin] * 3
-    # end
   end
 
   [200, 20, 2].each do |coin|
@@ -60,8 +56,4 @@ describe 'coinchanger' do
   it "returns [200, 200, 200, 200, 200, 200, 200, 200, 100, 50, 20, 10, 2] if money equals 1782" do
     expect(coinchanger(1782)).to eq [200, 200, 200, 200, 200, 200, 200, 200, 100, 50, 20, 10, 2]
   end
-
-
-
-
 end
