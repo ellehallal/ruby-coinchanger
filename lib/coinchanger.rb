@@ -10,15 +10,12 @@ def coinchanger(money)
       while money >= coin
           change << coin
           money -= coin
-          # puts "money: #{money}, coin: #{coin}"
-          # puts "change #{change}"
       end
     elsif is_divisible(money, coin)
       number_of_coins(money, coin).times do
         change << coin
         money -= coin
       end
-
     end
   end
   change
