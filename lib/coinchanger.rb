@@ -26,11 +26,7 @@ end
 
 
 def is_divisible(money, coin)
-  if money == 300 || money == 3
-    return false
-  else
-    money % coin == 0
-  end
+  money % coin == 0
 end
 
 def number_of_coins(money, coin)
