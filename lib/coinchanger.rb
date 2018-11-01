@@ -12,6 +12,7 @@ def coinchanger(money)
       while money >= coin
           change << coin
           money -= coin
+          puts "money: #{money}, coin: #{coin}"
       end
     end
   end
