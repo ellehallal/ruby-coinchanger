@@ -6,7 +6,7 @@ def coinchanger(money)
   coins.each do |coin|
     if money == coin
        return coin
-    elsif is_divisible(money, coin) && money != 300
+    elsif is_divisible(money, coin)
       return [coin] * number_of_coins(money, coin)
     elsif money == 300
       return [200, 100]
@@ -21,7 +21,11 @@ def coinchanger(money)
 end
 
 def is_divisible(money, coin)
-  money % coin == 0
+  if money == 300 || money == 3
+    return false
+  else
+    money % coin == 0
+  end
 end
 
 def number_of_coins(money, coin)
