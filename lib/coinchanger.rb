@@ -19,8 +19,6 @@ def coinchanger(money)
 end
 
 
-
-
 def is_divisible(money, coin)
   if money == 300 || money == 3
     return false
@@ -31,8 +29,4 @@ end
 
 def number_of_coins(money, coin)
   money / coin
-end
-
-def result_float(money, coin)
-
 end

@@ -33,6 +33,14 @@ describe 'coinchanger' do
     expect(coinchanger(500)).to eq [200, 200, 100]
   end
 
+  it "returns [200, 200, 100] if money equals 500" do
+    expect(coinchanger(500)).to eq [200, 200, 100]
+  end
+
+  it "returns [200, 200, 200, 200, 200, 200, 200, 100] if money equals 1500" do
+    expect(coinchanger(1500)).to eq [200, 200, 200, 200, 200, 200, 200, 100]
+  end
+
 
 
 
