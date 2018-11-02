@@ -1,4 +1,4 @@
 # Coinchanger
 
 ### Task ###
-Write a function that returns the least amount of coins for the value inputted in GBP
+Write a program which returns the least amount of coins for the value inputted. Currency: GBP
